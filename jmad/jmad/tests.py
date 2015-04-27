@@ -43,7 +43,7 @@ class StudentTestCase(LiveServerTestCase):
 
         # ...so he adds an artist to his search query and gets a more manageable list.
         second_artist_input = self.browser.find_element_by_css_selector('input#jmad-artist')
-        second_artist_input.send_keys('adderley')
+        second_artist_input.send_keys('Adderley')
         second_artist_input.submit()
 
         second_search_results = self.browser.find_elements_by_css_selector('.jmad-search-result')
